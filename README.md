@@ -1,3 +1,10 @@
+!!!ATTENTION!!!ATTENZIONE!!!ACHTUNG!!!
+
+This is the fork from the forked bootstrap-datepicker repo by Aymkdn (https://github.com/Aymkdn/Datepicker-for-Bootstrap).
+I've added isValidDate function to it.
+Please, read the following comments by Aymkdn.
+
+
 /!\ ATTENTION : This fork must be used as it is. If you want to improve it or fix issues, I highly recommend you to look at this other fork https://github.com/eternicode/bootstrap-datepicker that has fixed lot of bugs and add several features. /!\
 
 # Datepicker for Bootstrap
