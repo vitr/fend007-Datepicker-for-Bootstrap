@@ -2,6 +2,7 @@
  * bootstrap-datepicker.js 
  * Original Idea: http://www.eyecon.ro/bootstrap-datepicker (Copyright 2012 Stefan Petre)
  * Updated by AymKdn (http://kodono.info - https://github.com/Aymkdn/Datepicker-for-Bootstrap)
+ * Updated by VitR (https://github.com/vitr/Datepicker-for-Bootstrap/)
  * =========================================================
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,6 +38,10 @@
 				"keyup.Datepicker": $.proxy(this.update, this),
 				"keydown.Datepicker": $.proxy(this.keydown, this)
 			});
+            this.element.on('change', function(ev){
+                                 isValidDate($(this).val());
+            });
+
 		} else {
 			if (this.component){
 				this.component.on('click.Datepicker', $.proxy(this.show, this));
@@ -415,3 +420,45 @@
 						'</div>';
 
 }( window.jQuery )
+
+function isValidDate(d) {
+ // Regular expression used to check if date is in correct format
+ var pattern = new RegExp("[0-3][0-9]/(0|1)[0-9]/(19|20)[0-9]{2}");
+ if(d.match(pattern))
+ {
+    var date_array = d.split('/');
+    var day = date_array[0];
+
+    // Attention! Javascript consider months in the range 0 - 11
+    var month = date_array[1] - 1;
+    var year = date_array[2];
+
+    // This instruction will create a date object
+    source_date = new Date(year,month,day);
+
+    if(year != source_date.getFullYear())
+    {
+       alert('Year is not valid!');
+       return false;
+    }
+
+    if(month != source_date.getMonth())
+    {
+       alert('Month is not valid!');
+       return false;
+    }
+
+    if(day != source_date.getDate())
+    {
+       alert('Day is not valid!');
+       return false;
+    }
+ }
+ else
+ {
+    alert('Date format is not valid!');
+    return false;
+ }
+//alert ('good date');
+ return true;
+ }
