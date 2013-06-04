@@ -1,7 +1,7 @@
 !!!ATTENTION!!!ATTENZIONE!!!ACHTUNG!!!
 
 This is the fork from the forked bootstrap-datepicker repo by Aymkdn (https://github.com/Aymkdn/Datepicker-for-Bootstrap).
-I've added isValidDate function to it.
+I've added isValidDate function to it. DEMO: http://vitr.github.io/Datepicker-for-Bootstrap/
 Please, read the following comments by Aymkdn.
 
 
