@@ -1,3 +1,5 @@
+![test image](https://vitr-analytics.appspot.com/UA-75628680-1/valet4windows?flat&useReferer)
+
 !!!ATTENTION!!!ATTENZIONE!!!ACHTUNG!!!
 
 This is the fork from the forked bootstrap-datepicker repo by Aymkdn (https://github.com/Aymkdn/Datepicker-for-Bootstrap).
